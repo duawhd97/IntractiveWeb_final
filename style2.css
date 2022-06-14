@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    width: 300vw;
+    transition: transform 0.5s;
+}
+
+.hero-image {
+    width: 100vw;
+    float: left;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.zzap{
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 300px;
+    width: 1032px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+header nav a {
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #36B2FF;
+    border-radius: 1px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 1032px;
+    height: 448px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.content h2 {
+    color: #36B2FF;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 40px;
+}
+
+.content .profile {
+    position: absolute;
+    left: 83px;
+    top: 110px;
+    z-index: 0;
+    transition: all .1s ease-in;
+}
+
+.content .profile:hover {
+    transform: scale(1.05);
+}
+
+.content .data {
+    position: absolute;
+    left: 467px;
+    top: 110px;
+}
+
+.content .moto {
+    position: absolute;
+    left: 467px;
+    top: 210px;
+}
+
+.content .moto p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #737373;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    width: 1032px;
+    height: 720px;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-top: 1px solid #DCDCDC;
+}
+
+.content2 h2 {
+    color: #36B2FF;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 40px;
+}
+
+.skill1 {
+    position: absolute;
+    left: 0px;
+    top: 130px;
+    transition: all .1s ease-in;
+}
+
+.skill1:hover {
+    transform: scale(1.05);
+}
+
+.skill2 {
+    position: absolute;
+    left: 160px;
+    top: 130px;
+    transition: all .1s ease-in;
+}
+
+.skill2:hover {
+    transform: scale(1.05);
+}
+
+.skill3 {
+    position: absolute;
+    left: 320px;
+    top: 130px;
+    transition: all .1s ease-in;
+}
+
+.skill3:hover {
+    transform: scale(1.05);
+}
+
+.skill4 {
+    position: absolute;
+    left: 480px;
+    top: 130px;
+    transition: all .1s ease-in;
+}
+
+.skill4:hover {
+    transform: scale(1.05);
+}
+
+.skill5 {
+    position: absolute;
+    left: 0px;
+    top: 280px;
+    transition: all .1s ease-in;
+}
+
+.skill5:hover {
+    transform: scale(1.05);
+}
+
+.skill6 {
+    position: absolute;
+    left: 160px;
+    top: 280px;
+    transition: all .1s ease-in;
+}
+
+.skill6:hover {
+    transform: scale(1.05);
+}
+
+.skill7 {
+    position: absolute;
+    left: 320px;
+    top: 280px;
+    transition: all .1s ease-in;
+}
+
+.skill7:hover {
+    transform: scale(1.05);
+}
+
+div.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #36B2FF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    cursor: pointer;
+    background-color: #8CD3FF;
+    width: 120px;
+    height: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 70%;
+}

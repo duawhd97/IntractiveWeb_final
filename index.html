@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_Project</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <div class="progress-bar"></div>
+  <div class="zzap">
+    <div class="hero">
+      <div class="hero-image">
+        <img src="hero-image1.svg">
+      </div>
+      <div class="hero-image">
+        <img src="hero-image2.svg">
+      </div>
+      <div class="hero-image">
+        <img src="hero-image3.svg">
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <button class="btn1"></button>
+    <button class="btn2"></button>
+    <button class="btn3"></button>
+  </div>
+
+  <header>
+    <nav>
+      <a href="index.html">Projects</a>
+      <a href="index2.html">About me</a>
+      <a href="index3.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <div class="pr_1">
+      <a href="https://www.figma.com/file/9PoqEOx0JIRvfRx9w3cIgS/Portfolio?node-id=3%3A4967" target="_blank"><img
+          src="project1.svg"></a>
+    </div>
+    <div class="info1">
+      <p>
+        운동이 부족한 20대 대학생, 취준생을 대상으로 한<br>
+        플로깅을 통해 운동도 하고 리워드도 제공 받는 서비스.<br>
+        전반적인 기획과 디자인 및 프로토타이핑을 담당했다.
+      </p>
+    </div>
+    <div class="pr_2">
+      <a href="https://www.figma.com/file/9PoqEOx0JIRvfRx9w3cIgS/Portfolio?node-id=3%3A4967" target="_blank"><img
+          src="project2.svg"></a>
+    </div>
+    <div class="info2">
+      <p>
+        30대를 대상으로 한 안전하고 보장된 만남을 이어주는<br>
+        소개팅 서비스.<br>
+        UI디자인 전체를 담당했다.
+      </p>
+    </div>
+    <div class="pr_3">
+      <a href="https://www.figma.com/file/9PoqEOx0JIRvfRx9w3cIgS/Portfolio?node-id=3%3A4967" target="_blank"><img
+          src="project3.svg"></a>
+    </div>
+    <div class="info3">
+      <p>
+        카카오네비 리디자인.<br>
+        UI디자인 전체를 담당했다.
+      </p>
+    </div>
+    <div class="pr_4">
+      <a href="https://www.figma.com/file/9PoqEOx0JIRvfRx9w3cIgS/Portfolio?node-id=3%3A4967" target="_blank"><img
+          src="project4.svg"></a>
+    </div>
+    <div class="info4">
+      <p>
+        영유아를 대상으로 한 구강 관련 안전교육 360 VR 컨텐츠<br>
+        구성요소 모델링 및 기획을 담당했다.
+      </p>
+    </div>
+    <div class="pr_5">
+      <a href="https://www.figma.com/file/9PoqEOx0JIRvfRx9w3cIgS/Portfolio?node-id=3%3A4967" target="_blank"><img
+          src="project5.svg"></a>
+    </div>
+    <div class="info5">
+      <p>
+        한국공학대학교 재학생들을 위한 공모전 정보 안내 서비스<br>
+        웹UI 디자인과 메인 파트의 코딩을 담당했다.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const progressBar = document.querySelector("div.progress-bar");
+    const bodyTag = document.querySelector("body");
+    document.addEventListener("scroll", function () {
+      let scrollableHeight = bodyTag.getBoundingClientRect().height - window.innerHeight;
+      let scrollWidth = (window.scrollY / scrollableHeight) * window.innerWidth;
+      progressBar.style.width = scrollWidth + "px";
+    })
+
+    document.querySelector('.btn1').addEventListener('click', function () {
+      document.querySelector('.hero').style.transform = 'translate(0vw)';
+    })
+
+    document.querySelector('.btn2').addEventListener('click', function () {
+      document.querySelector('.hero').style.transform = 'translate(-100vw)';
+    })
+
+    document.querySelector('.btn3').addEventListener('click', function () {
+      document.querySelector('.hero').style.transform = 'translate(-200vw)';
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_About me</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="progress-bar"></div>
+    <div class="zzap">
+        <div class="hero">
+            <div class="hero-image">
+                <img src="hero-image1.svg">
+            </div>
+            <div class="hero-image">
+                <img src="hero-image2.svg">
+            </div>
+            <div class="hero-image">
+                <img src="hero-image3.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <button class="btn1"></button>
+        <button class="btn2"></button>
+        <button class="btn3"></button>
+        </div>
+    <header>
+        <nav>
+            <a href="index.html">Projects</a>
+            <a href="index2.html">About me</a>
+            <a href="index3.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Social.</h2>
+        <div class="sns1">
+            <a href="https://www.instagram.com/" target="_blank"><img src="insta.svg"></a>
+        </div>
+        <div class="sns2">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="mail.svg"></a>
+        </div>
+        <div class="sns3">
+            <a href="https://www.youtube.com/channel/UCV17TTWlTpVuS5UkFq1DH-A" target="_blank"><img
+                    src="youtube.svg"></a>
+        </div>
+    </section>
+
+    <section class="content2">
+        <h2>Direct.</h2>
+        <div class="sns4">
+            <img src="phone.svg">
+        </div>
+        <div class="info">
+            <p>phone number : 010-8060-0219<br>
+                kakaotalk : yum970219<br>
+                web : duawhd97@tukorea.ac.kr</p>
+        </div>
+        <div class="qr">
+            <img src="qr.svg">
+        </div>
+    </section>
+
+    <script>
+        const progressBar = document.querySelector("div.progress-bar");
+        const bodyTag = document.querySelector("body");
+
+        document.addEventListener("scroll", function () {
+            let scrollableHeight = bodyTag.getBoundingClientRect().height - window.innerHeight;
+            let scrollWidth = (window.scrollY / scrollableHeight) * window.innerWidth;
+            progressBar.style.width = scrollWidth + "px";
+        })
+
+        document.querySelector('.btn1').addEventListener('click', function () {
+            document.querySelector('.hero').style.transform = 'translate(0vw)';
+        })
+
+        document.querySelector('.btn2').addEventListener('click', function () {
+            document.querySelector('.hero').style.transform = 'translate(-100vw)';
+        })
+
+        document.querySelector('.btn3').addEventListener('click', function () {
+            document.querySelector('.hero').style.transform = 'translate(-200vw)';
+        })
+
+
+    </script>
+
+</body>
+
+</html>
